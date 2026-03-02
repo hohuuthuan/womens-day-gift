@@ -295,6 +295,10 @@
     }
     .letter-sign { margin-top: 18px; text-align: right }
 
+    .instruction-text {
+      padding: 20px;
+    }
+
     /* Arrows */
     .nav-arrow {
       position: absolute;
@@ -372,45 +376,47 @@
       <div class="sparkle" style="top: 20%; left: 60%; background: #f472b6; border-radius: 50%; animation-delay: 1.2s"></div>
     </div>
 
-    <p class="text-pink-600 text-lg mb-8 font-medium tracking-wide">✨ Nhấp vào hộp quà 3 lần để mở ✨</p>
+    <div class="flex flex-col items-center gap-8 py-8">
+      <p class="text-pink-600 text-lg font-medium tracking-wide instruction-text">✨ Nhấp vào hộp quà 3 lần để mở ✨</p>
 
-    <div id="click-counter" class="flex gap-3 mb-8">
-      <div class="w-4 h-4 rounded-full bg-pink-200 border-2 border-pink-400 transition-all duration-300" id="dot1"></div>
-      <div class="w-4 h-4 rounded-full bg-pink-200 border-2 border-pink-400 transition-all duration-300" id="dot2"></div>
-      <div class="w-4 h-4 rounded-full bg-pink-200 border-2 border-pink-400 transition-all duration-300" id="dot3"></div>
-    </div>
+      <div id="gift-box" class="relative cursor-pointer gift-float select-none" onclick="clickGift()">
+        <div class="ribbon"></div>
 
-    <div id="gift-box" class="relative cursor-pointer gift-float select-none" onclick="clickGift()">
-      <div class="ribbon"></div>
-
-      <div id="gift-lid" class="relative z-10 transition-all duration-500">
-        <div class="w-48 h-12 rounded-lg shadow-lg"
-          style="background: linear-gradient(135deg, #ec4899 0%, #db2777 100%)">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="w-8 h-full" style="background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%)"></div>
+        <div id="gift-lid" class="relative z-10 transition-all duration-500">
+          <div class="w-48 h-12 rounded-lg shadow-lg"
+            style="background: linear-gradient(135deg, #ec4899 0%, #db2777 100%)">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-8 h-full" style="background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%)"></div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div id="gift-body" class="relative -mt-1">
-        <div class="w-44 h-36 mx-auto rounded-lg shadow-2xl"
-          style="background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%)">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="w-8 h-full" style="background: linear-gradient(135deg, #f9a8d4 0%, #f472b6 100%)"></div>
-          </div>
-          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <span class="text-6xl">🎀</span>
+        <div id="gift-body" class="relative -mt-1">
+          <div class="w-44 h-36 mx-auto rounded-lg shadow-2xl"
+            style="background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%)">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-8 h-full" style="background: linear-gradient(135deg, #f9a8d4 0%, #f472b6 100%)"></div>
+            </div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <span class="text-6xl">🎀</span>
+            </div>
           </div>
         </div>
+
+        <div class="absolute -top-8 -left-8 text-3xl heart-beat" style="animation-delay: 0s">💕</div>
+        <div class="absolute -top-4 -right-8 text-2xl heart-beat" style="animation-delay: 0.3s">💗</div>
+        <div class="absolute -bottom-4 -left-6 text-2xl heart-beat" style="animation-delay: 0.6s">💖</div>
+        <div class="absolute -bottom-8 -right-6 text-3xl heart-beat" style="animation-delay: 0.9s">💝</div>
       </div>
 
-      <div class="absolute -top-8 -left-8 text-3xl heart-beat" style="animation-delay: 0s">💕</div>
-      <div class="absolute -top-4 -right-8 text-2xl heart-beat" style="animation-delay: 0.3s">💗</div>
-      <div class="absolute -bottom-4 -left-6 text-2xl heart-beat" style="animation-delay: 0.6s">💖</div>
-      <div class="absolute -bottom-8 -right-6 text-3xl heart-beat" style="animation-delay: 0.9s">💝</div>
+      <div id="click-counter" class="flex gap-3 justify-center">
+        <div class="w-4 h-4 rounded-full bg-pink-200 border-2 border-pink-400 transition-all duration-300" id="dot1"></div>
+        <div class="w-4 h-4 rounded-full bg-pink-200 border-2 border-pink-400 transition-all duration-300" id="dot2"></div>
+        <div class="w-4 h-4 rounded-full bg-pink-200 border-2 border-pink-400 transition-all duration-300" id="dot3"></div>
+      </div>
     </div>
 
-    <p class="mt-12 text-pink-500 font-dancing text-2xl">Một món quà đặc biệt dành cho bạn...</p>
+    <p class="text-pink-500 font-dancing text-2xl">Một món quà đặc biệt dành cho bạn...</p>
   </div>
 
   <!-- Wishes -->
