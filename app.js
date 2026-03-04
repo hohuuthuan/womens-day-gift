@@ -1,4 +1,3 @@
-// Optional: better 100vh on mobile browsers (kept minimal)
 (function () {
   const setVH = () => {
     document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
@@ -8,21 +7,21 @@
 })();
 
 const wishes = [
-  { icon: "💖", title: "Xinh Đẹp Mãi", message: "Chúc bạn luôn xinh đẹp, tự tin và tỏa sáng theo cách riêng rực rỡ nhất!", color: "from-rose-400 to-pink-500" },
-  { icon: "💝", title: "Hạnh Phúc Viên Mãn", message: "Mong bạn luôn được yêu thương, chở che và có cuộc sống hạnh phúc trọn vẹn!", color: "from-pink-400 to-rose-500" },
-  { icon: "✨", title: "Thành Công Rực Rỡ", message: "Chúc bạn gặt hái nhiều thành công trong công việc và cuộc sống!", color: "from-amber-400 to-orange-500" },
-  { icon: "💪", title: "Sức Khỏe Dồi Dào", message: "Chúc bạn luôn khỏe mạnh, tràn đầy năng lượng để theo đuổi ước mơ!", color: "from-green-400 to-emerald-500" },
-  { icon: "💕", title: "Tình Yêu Ngọt Ngào", message: "Mong bạn luôn được yêu thương và trân trọng bởi những người xung quanh!", color: "from-red-400 to-pink-500" },
-  { icon: "🎀", title: "May Mắn Luôn Bên", message: "Chúc mọi điều tốt đẹp nhất sẽ đến với bạn trong những ngày sắp tới!", color: "from-purple-400 to-pink-500" },
-  { icon: "😊", title: "Niềm Vui Mỗi Ngày", message: "Mong mỗi ngày của bạn đều tràn ngập tiếng cười và những điều dễ thương!", color: "from-fuchsia-400 to-pink-500" },
-  { icon: "🦋", title: "Tự Do Bay Cao", message: "Chúc bạn luôn tự do theo đuổi đam mê và sống đúng với chính mình!", color: "from-sky-400 to-indigo-500" },
-  { icon: "🌟", title: "Tỏa Sáng Rực Rỡ", message: "Bạn là ngôi sao sáng nhất — hãy tiếp tục tỏa sáng và truyền cảm hứng!", color: "from-yellow-400 to-amber-500" },
-  { icon: "🍀", title: "An Lành Bình Yên", message: "Chúc bạn luôn bình an, thanh thản và tìm thấy sự cân bằng trong cuộc sống!", color: "from-teal-400 to-green-500" }
+  { icon: "🎀", title: "Mãi xinh đẹp", message: "Chúc bạn luôn xinh đẹp, tự tin và tỏa sáng theo cách riêng của mình, nhan sắc giữ mãi tuổi mười tám đôi mươi nhá!", color: "from-rose-400 to-pink-500" },
+  { icon: "🏆", title: "Thành công", message: "Chúc bạn gặt hái nhiều thành công, thuận lợi và suôn sẻ trong công việc và \" nhau it thoi nha \" :))", color: "from-amber-400 to-orange-500" },
+  { icon: "💝", title: "Hạnh phúc", message: "Mong bạn luôn được chiều chuộng, yêu thương, chở che và có cuộc sống hạnh phúc trọn vẹn!", color: "from-pink-400 to-rose-500" },
+  { icon: "❤️", title: "Sức khỏe", message: "Chúc bạn luôn tràn đầy năng lượng, ăn ngon, ngủ ngon, tinh thần lúc nào cũng nhẹ nhõm và tích cực.", color: "from-green-400 to-emerald-500" },
+  { icon: "🍀", title: "May mắn", message: "Chúc mọi điều may mắn và tốt đẹp nhất sẽ đến với bạn trong những ngày sắp tới, đi đâu cũng thuận, làm gì cũng \"trúng\", chuyện không vui sẽ nhanh chóng trôi qua.", color: "from-purple-400 to-pink-500" },
+  { icon: "😊", title: "Niềm vui mỗi ngày", message: "Mong rằng mỗi ngày của bạn đều tràn ngập niềm vui và tiếng cười, người ta nói \"Một nụ cười bằng mười thang thuốc bổ\" nên hãy cười lên nhé!", color: "from-fuchsia-400 to-pink-500" },
+  { icon: "🦋", title: "Tự do", message: "Chúc bạn luôn tự do theo đuổi đam mê và sống đúng với khát khao ước muốn của chính mình!", color: "from-sky-400 to-indigo-500" },
+  { icon: "🌟", title: "Tỏa sáng", message: "Bạn đã là một ngôi sao rất sáng rồi nên hãy cứ tiếp tục tỏa sáng nha, một ngày nào đó trở thành mặt trời thì ngol lun :))", color: "from-yellow-400 to-amber-500" },
+  { icon: "🍀", title: "Bình an", message: "Chúc bạn và gia đình luôn bình an và hạnh phúc, mỗi ngày trôi qua nhẹ nhàng, ít lo nghĩ, ít muộn phiền luôn có cảm giác yên tâm về ngày mai và tương lai.", color: "from-teal-400 to-green-500" },
+  { icon: "🌙", title: "Ước mơ", message: "Chúc bạn luôn giữ được những ước mơ của mình, đủ kiên nhẫn để theo đuổi, đủ can đảm để đối mặt với thử thách và rồi sẽ có ngày mọi cố gắng đều được đền đáp thật xứng đáng.", color: "from-violet-400 to-fuchsia-500" }
 ];
 
 const specialLetter = {
   title: "Lời Chúc Đặc Biệt",
-  to: "Gửi bạn,",
+  to: "Dear Thanh Thuy.",
   body: [
     "Hôm nay là ngày 8/3 — mình chỉ muốn nhắc bạn rằng bạn thật sự tuyệt vời.",
     "Cảm ơn vì đã luôn cố gắng, luôn dịu dàng theo cách riêng, và vẫn giữ cho trái tim mình ấm áp.",
