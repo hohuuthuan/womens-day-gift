@@ -274,30 +274,30 @@ function renderScreens() {
   letter.className = "screen snap-start";
   letter.id = "screen-letter";
   letter.innerHTML = `
-    <div class="screen-inner" style="margin-top: -50px;">
-      <div class="letter-paper">
-        <div class="letter-stamp">💌</div>
+  <div class="screen-inner" style="margin-top: -50px;">
+    <div class="letter-paper">
+      <div class="letter-stamp">💌</div>
 
-        <div class="text-center mb-3">
-          <h2 class="font-dancing text-5xl md:text-6xl gradient-text">${escapeHtml(specialLetter.title)}</h2>
-          <p class="text-pink-700 mt-2 opacity-90">Một chút dịu dàng, dành riêng cho bạn</p>
-        </div>
+      <div class="text-center mb-3">
+        <h2 class="font-dancing text-5xl md:text-6xl gradient-text">${escapeHtml(specialLetter.title)}</h2>
+        <p class="text-pink-700 mt-2 opacity-90">Một chút dịu dàng, dành riêng cho bạn</p>
+      </div>
 
-        <div class="letter-line"></div>
+      <div class="letter-line"></div>
 
-        <div class="text-lg leading-relaxed" style="color:#831843">
-          <p class="font-medium mb-3">${escapeHtml(specialLetter.to)}</p>
-          ${specialLetter.body.map((p) => `<p class="mb-3">${escapeHtml(p)}</p>`).join("")}
-        </div>
+      <div class="text-lg leading-relaxed letter-body" style="color:#831843">
+        <p class="font-medium mb-3">${escapeHtml(specialLetter.to)}</p>
+        ${specialLetter.body.map((p) => `<p class="mb-3">${escapeHtml(p)}</p>`).join("")}
+      </div>
 
-        <div class="letter-line"></div>
+      <div class="letter-line"></div>
 
-        <div class="letter-sign" style="color:#ec4899">
-          <p class="font-medium">${escapeHtml(specialLetter.from)}</p>
-        </div>
+      <div class="letter-sign" style="color:#ec4899">
+        <p class="font-medium">${escapeHtml(specialLetter.from)}</p>
       </div>
     </div>
-  `;
+  </div>
+`;
 
   // Letter: up to last pair screen
   letter.appendChild(
