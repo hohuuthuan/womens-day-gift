@@ -30,7 +30,6 @@ const specialLetter = {
     "Chúc embe luôn thuận lợi trong công việc, mọi nỗ lực đều được ghi nhận, cố gắn nào cũng có thành quả xứng đáng, bớt áp lực, mỗi ngày đi làm đều nhẹ nhàng hơn chút.",
     "Để được như vậy thì cũng phải giữ gìn sức khỏe nữa, chúc cho embe và gia đình luôn bình an, khỏe mạnh, tinh thần lúc nào cũng tích cực và vui vẻ nhe.",
     "Bên cạnh đó thì chúc cho embe sẽ luôn gặp được những điều tử tế trong tình cảm, gặp được người đủ chân thành để có thể cảm thấy an tâm, tất cả là do mình tự quyết định đừng phó mặc cho \"ý trời\" nha.",
-    "Hãy luôn tiến về phía trước nha, có thử thách thì cố gắn đương đầu và kiên trì vượt qua, đôi khi hãy nhìn lại phía sau 1 chút có lẽ vẫn có một điều gì đó đang âm thầm lặng lẽ chờ đợi nếu được thì hãy nắm lấy điều đó và tiến về phía trước cùng.",
     "Nếu có lúc mệt mỏi, hãy nghỉ ngơi một chút… rồi lại tiếp tục....✨"
   ],
   from: "From: HT"
@@ -224,8 +223,8 @@ function renderScreens() {
 
     if (idx === 0) {
       inner.innerHTML = `
-        <header class="text-center">
-          <div class="header-badge mx-auto mb-5">
+        <header class="text-center mt-2">
+          <div class="header-badge mx-auto mb-2">
             <span class="text-xl heart-beat">💗</span>
             <span class="text-pink-700 font-medium tracking-wide">International Women's Day</span>
             <span class="text-xl heart-beat" style="animation-delay:.25s">💖</span>
@@ -234,7 +233,7 @@ function renderScreens() {
           <h1 class="font-dancing gradient-text one-line-title mb-3">Chúc Mừng Ngày 8/3</h1>
           <p class="text-pink-700 text-lg md:text-2xl font-medium">⭐⭐</p>
 
-          <div class="mt-5 flex items-center justify-center gap-3 opacity-90">
+          <div class="flex items-center justify-center gap-3 opacity-90">
             <span class="h-px w-10 bg-pink-300/70"></span>
             <span class="text-pink-600">❤</span>
             <span class="h-px w-10 bg-pink-300/70"></span>
