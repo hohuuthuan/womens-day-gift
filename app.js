@@ -1,9 +1,16 @@
 (function () {
   const setVH = () => {
-    document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
   };
   setVH();
-  window.addEventListener("resize", setVH);
+  let lastWidth = window.innerWidth;
+  window.addEventListener("resize", () => {
+    if (window.innerWidth !== lastWidth) {
+      setVH();
+      lastWidth = window.innerWidth;
+    }
+  });
 })();
 
 const wishes = [

@@ -443,7 +443,8 @@
 
 .snap-y-mandatory {
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  scroll-padding-top: 1px;
 }
 
 .snap-start {
@@ -452,12 +453,12 @@
 
 .screen {
   min-height: 100vh;
-  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 56px 16px;
   position: relative;
+  scroll-snap-stop: always; 
 }
 
 @media (max-width: 767px) {
@@ -505,7 +506,7 @@
 }
 
 .screen.screen-1 .screen-inner {
-  min-height: calc(100dvh - 112px);
+  min-height: calc(100vh - 112px);
   display: flex;
   flex-direction: column;
   justify-content: center;
