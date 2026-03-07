@@ -664,3 +664,32 @@
     animation: none !important;
   }
 }
+
+.letter-screen {
+  padding-top: 96px;
+}
+
+.letter-body p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media (max-width: 767px) {
+  .letter-screen {
+    padding-top: calc(110px + var(--safe-top));
+    padding-bottom: 24px;
+    align-items: flex-start;
+  }
+
+  .letter-screen .nav-arrow.up {
+    top: calc(10px + var(--safe-top));
+  }
+
+  .letter-screen .nav-arrow .chev {
+    font-size: 20px;
+  }
+
+  .letter-screen .letter-paper {
+    margin-top: 0;
+  }
+}

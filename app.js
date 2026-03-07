@@ -271,10 +271,10 @@ function renderScreens() {
 
   // Letter screen
   const letter = document.createElement("section");
-  letter.className = "screen snap-start";
+  letter.className = "screen snap-start letter-screen";
   letter.id = "screen-letter";
   letter.innerHTML = `
-  <div class="screen-inner" style="margin-top: -50px;">
+  <div class="screen-inner">
     <div class="letter-paper">
       <div class="letter-stamp">💌</div>
 
