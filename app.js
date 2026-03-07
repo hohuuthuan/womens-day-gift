@@ -287,7 +287,7 @@ function renderScreens() {
 
       <div class="text-center mb-3">
         <h2 class="font-dancing text-5xl md:text-6xl gradient-text">${escapeHtml(specialLetter.title)}</h2>
-        <p class="text-pink-700 mt-2 opacity-90">Một chút dịu dàng, dành riêng cho bạn</p>
+        <p class="text-pink-700 mt-2 opacity-90">Một chút lời dành cho bạn</p>
       </div>
 
       <div class="letter-line"></div>
