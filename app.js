@@ -23,8 +23,7 @@ const specialLetter = {
   title: "Lời Chúc Đặc Biệt",
   to: "Dear TT",
   body: [
-    "Hôm nay là ngày 8/3 — tui muốn gửi cho embe một lời chúc thật dài, thật là đặc biệtttt.",
-    "Nhưng mà......",
+    "Hôm nay là ngày 8/3 — tui muốn gửi cho embe một lời chúc thật dài, thật là đặc biệtttt. Nhưng mà......",
     "Màn hình thì có hạn cho nên sẽ không đủ để chứa hết những điều cần nói, nên là tui sẽ tóm gọn lại ha",
     "Tui mong rằng embe sẽ luôn xinh đẹp theo cách của mình, luôn rạng rỡ tự tin và hạnh phúc không chỉ hôm nay mà là tất cả những ngày sau này nữa.",
     "Chúc embe luôn thuận lợi trong công việc, mọi nỗ lực đều được ghi nhận, cố gắn nào cũng có thành quả xứng đáng, bớt áp lực, mỗi ngày đi làm đều nhẹ nhàng hơn chút.",
