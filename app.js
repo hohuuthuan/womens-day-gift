@@ -223,7 +223,7 @@ function renderScreens() {
 
     if (idx === 0) {
       inner.innerHTML = `
-        <header class="text-center mt-2">
+        <header class="text-center">
           <div class="header-badge mx-auto mb-2">
             <span class="text-xl heart-beat">💗</span>
             <span class="text-pink-700 font-medium tracking-wide">International Women's Day</span>
@@ -275,7 +275,7 @@ function renderScreens() {
   letter.className = "screen snap-start";
   letter.id = "screen-letter";
   letter.innerHTML = `
-    <div class="screen-inner">
+    <div class="screen-inner" style="margin-top: -50px;">
       <div class="letter-paper">
         <div class="letter-stamp">💌</div>
 
