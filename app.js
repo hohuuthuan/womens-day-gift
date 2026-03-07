@@ -21,14 +21,19 @@ const wishes = [
 
 const specialLetter = {
   title: "Lời Chúc Đặc Biệt",
-  to: "Dear Thanh Thuy.",
+  to: "Dear TT",
   body: [
-    "Hôm nay là ngày 8/3 — mình chỉ muốn nhắc bạn rằng bạn thật sự tuyệt vời.",
-    "Cảm ơn vì đã luôn cố gắng, luôn dịu dàng theo cách riêng, và vẫn giữ cho trái tim mình ấm áp.",
-    "Mong bạn sẽ luôn được yêu thương, được trân trọng, và có thật nhiều ngày bình yên.",
-    "Nếu có lúc mệt, hãy nghỉ một chút… rồi lại tiếp tục tỏa sáng nhé ✨"
+    "Hôm nay là ngày 8/3 — tui muốn gửi cho embe một lời chúc thật dài, thật là đặc biệtttt.",
+    "Nhưng mà......",
+    "Màn hình thì có hạn cho nên sẽ không đủ để chứa hết những điều cần nói, nên là tui sẽ tóm gọn lại ha",
+    "Tui mong rằng embe sẽ luôn xinh đẹp theo cách của mình, luôn rạng rỡ tự tin và hạnh phúc không chỉ hôm nay mà là tất cả những ngày sau này nữa.",
+    "Chúc embe luôn thuận lợi trong công việc, mọi nỗ lực đều được ghi nhận, cố gắn nào cũng có thành quả xứng đáng, bớt áp lực, mỗi ngày đi làm đều nhẹ nhàng hơn chút.",
+    "Để được như vậy thì cũng phải giữ gìn sức khỏe nữa, chúc cho embe và gia đình luôn bình an, khỏe mạnh, tinh thần lúc nào cũng tích cực và vui vẻ nhe.",
+    "Bên cạnh đó thì chúc cho embe sẽ luôn gặp được những điều tử tế trong tình cảm, gặp được người đủ chân thành để có thể cảm thấy an tâm, tất cả là do mình tự quyết định đừng phó mặc cho \"ý trời\" nha.",
+    "Hãy luôn tiến về phía trước nha, có thử thách thì cố gắn đương đầu và kiên trì vượt qua, đôi khi hãy nhìn lại phía sau 1 chút có lẽ vẫn có một điều gì đó đang âm thầm lặng lẽ chờ đợi nếu được thì hãy nắm lấy điều đó và tiến về phía trước cùng.",
+    "Nếu có lúc mệt mỏi, hãy nghỉ ngơi một chút… rồi lại tiếp tục....✨"
   ],
-  from: "Thương mến,"
+  from: "From: HT"
 };
 
 let clickCount = 0;
@@ -227,7 +232,7 @@ function renderScreens() {
           </div>
 
           <h1 class="font-dancing gradient-text one-line-title mb-3">Chúc Mừng Ngày 8/3</h1>
-          <p class="text-pink-700 text-lg md:text-2xl font-medium">💝 Gửi đến những người phụ nữ tuyệt vời nhất 💝</p>
+          <p class="text-pink-700 text-lg md:text-2xl font-medium">⭐⭐</p>
 
           <div class="mt-5 flex items-center justify-center gap-3 opacity-90">
             <span class="h-px w-10 bg-pink-300/70"></span>
@@ -291,11 +296,6 @@ function renderScreens() {
 
         <div class="letter-sign" style="color:#ec4899">
           <p class="font-medium">${escapeHtml(specialLetter.from)}</p>
-          <p class="font-dancing text-3xl mt-1">💖</p>
-        </div>
-
-        <div class="mt-6 text-center text-sm text-pink-600/90">
-          Made with 💕 for International Women's Day
         </div>
       </div>
     </div>
